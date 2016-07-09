@@ -1,10 +1,4 @@
-#include "sum.h"
-#include <iostream>
-using namespace std;
-int main() {
-	int a;
-	cin >> a;
-	cout << sum(a) << endl;
-	return 0;
-}
+g++ -c -o sum.o sum.cpp
+g++ -c -o main.o main.cpp
+g++ -o sum_test main.o sum.o
 
